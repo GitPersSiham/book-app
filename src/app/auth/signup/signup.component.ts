@@ -33,7 +33,7 @@ const email = this.signUpForm.get('email').value;
  const password = this.signUpForm.get('password').value;  
  this.authService.createNewUser(email, password).then(
    () => {
-     this.router.navigate(['/books'])
+     this.router.navigate(['/auth/signin'])
    },
  
    ( error ) => {
